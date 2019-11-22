@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h2><a href="/add">添加用户</a></h2>
+        <table width="100%" border="1">
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>姓别</th>
+                <th>操作</th>
+            </tr>
+            {{each result}}
+            <tr>
+                <td>{{$value.username}}</td>
+                <td>{{$value.age}}</td>
+                <td>{{$value.sex}}</td>
+                <td><a href="/edit?id={{@$value._id}}">编辑</a> <a href="/delete?id={{@$value._id}}">删除</a></td>
+            </tr>
+            {{/each}}
+            
+        </table>
+        <ul>
+            
+        </ul>
+    </body>
+</html>

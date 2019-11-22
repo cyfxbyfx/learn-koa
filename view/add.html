@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <form action="doAdd" method="POST">
+            <label for="username">用户名：</label>
+            <input type="text" name="username">
+
+            <label for="sex">姓别：</label>
+            <input type="radio" name="sex" value="1" checked>男
+            <input type="radio" name="sex" value="0">女
+
+            <label for="age">年龄：</label>
+            <input type="text" name="age">
+
+
+            <button type="submit">添加</button>
+        </form>
+    </body>
+</html>
